@@ -18,10 +18,10 @@ alert(password24); //nel caso dell'alert (l'ho fatto al contrario rispetto all'o
 
 
 
-/*
+
 
 const costoKM = 100
-
+/*
 let prezzo = costoKM * distanzaKM
 
 // Sconti minorenni
@@ -63,12 +63,27 @@ myButton.addEventListener('click', function() {
     console.log((FirstSecondName.value), typeof FirstSecondName, "FirstSecondName");
     console.log(Age.value);
 
-    const ticketName = FirstSecondName;
-    const ticketOfferta = Age;
-    const ticketPrice = document.getElementById("age");
-
     const TicketName = document.getElementById("ticket_name");
     TicketName.innerHTML = FirstSecondName.value;
+
+    const ticketOfferta = document.getElementById("ticket_tariffa");
+    ticketOfferta.innerHTML = Age.value;
+
+    const KM_dafare = document.getElementById("km")
+    const ticketPrice = document.getElementById("ticket_price")
+    
+    ticketPrice.innerHTML = (costoKM * KM_dafare.value);
+
+    if (Age.value=="20%"){
+        ticketPrice.innerHTML = (costoKM * KM_dafare.value) * (80 / 100);
+    }
+    if (Age.value=="40%"){
+        ticketPrice.innerHTML = (costoKM * KM_dafare.value) * (60 / 100)
+        ticketPrice = ticketPrice.toFixed(2);
+    }
+
+    ticketPrice = ticketPrice.toFixed();
+
 
     
 
