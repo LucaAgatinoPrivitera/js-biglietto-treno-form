@@ -7,29 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div  class="container">
-        <h1 id="titolo">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <h2 id="titolo">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-        <form>
-            <label for="fname">Nome Cognome</label>
-            <input type="text" id="fullname" name="name" value="John Snow">
+        <div class="price_calc">
+            <form>
+                <label for="fname">Nome Cognome</label>
+                <input type="text" id="fullname" name="name" value="John Snow">
+    
+                <label for="lname">Km da percorrere</label>
+                <input type="text" id="km" name="km" value="10">
+    
+                <label for="lname">Fascia d'età</label>
+                <select id="age" name="Age">
+                    <option value="mag">Maggiorenne</option>
+                    <option value="min">Minorenne</option>
+                    <option value="old">Senior</option>
+                </select>
+    
+                <div class="input_submit">
+                    <input id="genera" value="Genera">
+                    <input id="annulla" type="submit" value="Annulla">
+                  </div>
+            </form>
+        </div>
 
-            <label for="lname">Km da percorrere</label>
-            <input type="text" id="km" name="km" value="10">
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="price_calc">
+            <h3>Dettaglio passeggeri</h3>
+            <div class="container_biglietto">
+                <div class="w_20">
+                    <h3>NOME PASSEGGERO</h3>
+                    <p id="ticket_name">John Snow</p>
+                </div>
 
-            <label for="lname">Fascia d'età</label>
-            <select id="age" name="Age">
-                <option value="mag">Maggiorenne</option>
-                <option value="min">Minorenne</option>
-                <option value="old">Senior</option>
-            </select>
+                <div class="w_20">
+                    <h3>Offerta</h3>
+                    <p id="ticket_tariffa">Biglietto standard</p>
+                </div>
 
-            <div class="input_submit">
-                <input id="genera" value="Genera">
-                <input id="annulla" type="submit" value="Annulla">
-              </div>
-            
-        </form>
+                <div class="w_20">
+                    <h3>Carrozza</h3>
+                    <p id="carrozza">5</p>
+                </div>
+
+                <div class="w_20">
+                    <h3>Codice CP</h3>
+                    <p id="cp">92911</p>
+                </div>
+
+                <div class="w_20">
+                    <h3>Costo biglietto</h3>
+                    <p id="ticket_price">2,10 &euro;</p>
+                </div>
+            </div>
+        </div>
+
+        
+
 
     </div>
 

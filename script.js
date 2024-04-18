@@ -63,4 +63,13 @@ myButton.addEventListener('click', function() {
     console.log((FirstSecondName.value), typeof FirstSecondName, "FirstSecondName");
     console.log(Age.value);
 
+    const ticketName = FirstSecondName;
+    const ticketOfferta = Age;
+    const ticketPrice = document.getElementById("age");
+
+    const TicketName = document.getElementById("ticket_name");
+    TicketName.innerHTML = FirstSecondName.value;
+
+    
+
 });

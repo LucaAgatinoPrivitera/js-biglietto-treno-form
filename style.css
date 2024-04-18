@@ -9,13 +9,44 @@ body{
 h1{
     padding-bottom: 5rem;
 }
+h2{
+    color: rgb(243, 84, 84);
+}
+h3{
+    text-align: left;
+}
+.w_20{
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+p{
+    text-align: left;
+}
 
 .container {
     padding-top: 10rem;
-    width: 1200px;
+    width: 100%;
     margin: auto;
+    margin: 0 0;
     text-align: center;
     color: rgb(113, 6, 163);
+    background-color: burlywood;
+}
+.price_calc{
+    width: 80%;
+    background-color: white;
+    border-radius: 0.6rem;
+    margin: 1rem auto 2rem auto;
+    padding-top: 2rem;
+    color: black;
+}
+
+.container_biglietto{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    display: flex;
 }
 
 .form_div{
